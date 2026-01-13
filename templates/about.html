@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - FitZone Gym</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FitZone</div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}" class="active">About Us</a></li>
+                <li><a href="{{ url_for('membership') }}">Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>About FitZone</h1>
+                <p>Discover our story, mission, and the passionate team dedicated to helping you achieve your fitness goals.</p>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Our Mission</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>🎯 Our Purpose</h3>
+                        <p>At FitZone, we believe fitness is not just about physical transformation—it's about building confidence, creating healthy habits, and fostering a community where everyone feels welcome and supported on their wellness journey.</p>
+                    </div>
+                    <div class="card">
+                        <h3>💪 Our Vision</h3>
+                        <p>To be the leading fitness destination that empowers individuals to unlock their full potential through innovative training methods, cutting-edge facilities, and personalized support that makes fitness accessible to all.</p>
+                    </div>
+                    <div class="card">
+                        <h3>❤️ Our Values</h3>
+                        <p>We are committed to excellence, inclusivity, and integrity. Every member's success is our success, and we strive to create an environment where everyone can thrive regardless of their starting point or fitness level.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section class="section" style="background: white;">
+            <div class="container">
+                <h2 class="section-title">Our Story</h2>
+                <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <p style="font-size: 1.2rem; line-height: 1.8; color: #666; margin-bottom: 2rem;">
+                        Founded in 2011, FitZone began as a small community gym with a big dream: to create a space where fitness meets friendship, and goals become achievements. What started with just a handful of equipment and a passionate team has grown into a premier fitness destination serving over 5,000 members.
+                    </p>
+                    <p style="font-size: 1.2rem; line-height: 1.8; color: #666; margin-bottom: 2rem;">
+                        Over the years, we've expanded our facilities, added state-of-the-art equipment, and assembled a team of world-class trainers. But our core mission remains the same: to provide an inclusive, supportive environment where everyone can pursue their fitness goals with confidence.
+                    </p>
+                    <p style="font-size: 1.2rem; line-height: 1.8; color: #666;">
+                        Today, FitZone is more than just a gym—we're a community, a second home, and a place where transformation happens every day. Join us and become part of our story.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Meet Our Expert Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><circle fill='%23e74c3c' cx='60' cy='60' r='60'/><circle fill='%23fff' cx='60' cy='45' r='20'/><ellipse fill='%23fff' cx='60' cy='100' rx='35' ry='25'/></svg>" alt="Sarah Johnson">
+                        <h4>Sarah Johnson</h4>
+                        <div class="role">Head Trainer & Founder</div>
+                        <p>With 15+ years in fitness and nutrition, Sarah founded FitZone with a vision to make fitness accessible and enjoyable for everyone.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><circle fill='%232c3e50' cx='60' cy='60' r='60'/><circle fill='%23fff' cx='60' cy='45' r='20'/><ellipse fill='%23fff' cx='60' cy='100' rx='35' ry='25'/></svg>" alt="Mike Rodriguez">
+                        <h4>Mike Rodriguez</h4>
+                        <div class="role">Strength & Conditioning Coach</div>
+                        <p>Former professional athlete turned trainer, Mike specializes in strength training and sports performance enhancement.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><circle fill='%2327ae60' cx='60' cy='60' r='60'/><circle fill='%23fff' cx='60' cy='45' r='20'/><ellipse fill='%23fff' cx='60' cy='100' rx='35' ry='25'/></svg>" alt="Emma Chen">
+                        <h4>Emma Chen</h4>
+                        <div class="role">Yoga & Wellness Instructor</div>
+                        <p>Certified yoga instructor and wellness coach, Emma brings mindfulness and balance to our fitness programs.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><circle fill='%23f39c12' cx='60' cy='60' r='60'/><circle fill='%23fff' cx='60' cy='45' r='20'/><ellipse fill='%23fff' cx='60' cy='100' rx='35' ry='25'/></svg>" alt="David Thompson">
+                        <h4>David Thompson</h4>
+                        <div class="role">Nutritionist & Lifestyle Coach</div>
+                        <p>Registered dietitian with expertise in sports nutrition and sustainable lifestyle changes for long-term health.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><circle fill='%239b59b6' cx='60' cy='60' r='60'/><circle fill='%23fff' cx='60' cy='45' r='20'/><ellipse fill='%23fff' cx='60' cy='100' rx='35' ry='25'/></svg>" alt="Lisa Park">
+                        <h4>Lisa Park</h4>
+                        <div class="role">Group Fitness Director</div>
+                        <p>Dynamic group fitness instructor leading our HIIT, spinning, and dance fitness classes with infectious energy.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><circle fill='%2334495e' cx='60' cy='60' r='60'/><circle fill='%23fff' cx='60' cy='45' r='20'/><ellipse fill='%23fff' cx='60' cy='100' rx='35' ry='25'/></svg>" alt="James Wilson">
+                        <h4>James Wilson</h4>
+                        <div class="role">Physical Therapist</div>
+                        <p>Licensed physical therapist specializing in injury prevention, rehabilitation, and corrective exercise programs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Facilities Section -->
+        <section class="section" style="background: white;">
+            <div class="container">
+                <h2 class="section-title">World-Class Facilities</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>🏋️ Strength Training Zone</h3>
+                        <p>Fully equipped with free weights, Olympic platforms, power racks, and the latest strength training machines from leading manufacturers.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🏃‍♂️ Cardio Theater</h3>
+                        <p>State-of-the-art cardio equipment including treadmills, ellipticals, bikes, and rowing machines with personal entertainment systems.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🤸‍♀️ Functional Training Area</h3>
+                        <p>Dedicated space for functional movement, TRX training, battle ropes, kettlebells, and bodyweight exercises.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🧘‍♀️ Mind-Body Studio</h3>
+                        <p>Peaceful studio space for yoga, pilates, meditation, and stretching classes with natural lighting and calming ambiance.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🏊‍♂️ Aquatic Center</h3>
+                        <p>25-meter lap pool, therapy pool, and spa facilities for low-impact workouts and recovery sessions.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🍎 Nutrition Bar</h3>
+                        <p>Healthy smoothies, protein shakes, and nutritious snacks to fuel your workouts and support your fitness goals.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🚿 Luxury Locker Rooms</h3>
+                        <p>Spacious locker rooms with private showers, steam rooms, saunas, and premium amenities for your comfort.</p>
+                    </div>
+                    <div class="card">
+                        <h3>👶 Childcare Center</h3>
+                        <p>Safe, supervised childcare services so parents can focus on their workouts while kids enjoy age-appropriate activities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards & Recognition Section -->
+        <section class="section" style="background: linear-gradient(135deg, #2c3e50, #34495e); color: white;">
+            <div class="container">
+                <h2 style="color: white; text-align: center; margin-bottom: 3rem;">Awards & Recognition</h2>
+                <div class="cards-grid">
+                    <div class="card" style="background: rgba(255,255,255,0.1); color: white; border-top: 4px solid #f39c12;">
+                        <h3 style="color: #f39c12;">🏆 Best Gym 2025</h3>
+                        <p>Voted "Best Gym in the City" by Local Fitness Magazine for exceptional facilities and member satisfaction.</p>
+                    </div>
+                    <div class="card" style="background: rgba(255,255,255,0.1); color: white; border-top: 4px solid #27ae60;">
+                        <h3 style="color: #27ae60;">🌟 Excellence Award</h3>
+                        <p>Recognized for outstanding customer service and innovative fitness programs by the National Fitness Association.</p>
+                    </div>
+                    <div class="card" style="background: rgba(255,255,255,0.1); color: white; border-top: 4px solid #e74c3c;">
+                        <h3 style="color: #e74c3c;">💚 Green Fitness Certification</h3>
+                        <p>Certified as an eco-friendly fitness facility for our sustainable practices and environmental initiatives.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('about') }}">About</a>
+                <a href="{{ url_for('membership') }}">Membership</a>
+            </div>
+            <p>&copy; 2026 FitZone Gym. All rights reserved. Transform your body, transform your life.</p>
+        </div>
+    </footer>
+</body>
+</html>

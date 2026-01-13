@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Plans - FitZone Gym</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FitZone</div>
+            <ul class="nav-links">
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('about') }}">About Us</a></li>
+                <li><a href="{{ url_for('membership') }}" class="active">Membership</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Membership Plans</h1>
+                <p>Choose the perfect membership plan that fits your lifestyle and fitness goals. All plans include access to our world-class facilities and expert support.</p>
+            </div>
+        </section>
+
+        <!-- Membership Plans Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Choose Your Plan</h2>
+                <div class="membership-plans">
+                    <!-- Basic Plan -->
+                    <div class="plan">
+                        <h3>Basic</h3>
+                        <div class="price">$29<span>/month</span></div>
+                        <ul>
+                            <li>Access to gym equipment</li>
+                            <li>Locker room facilities</li>
+                            <li>Basic fitness assessment</li>
+                            <li>Access during staffed hours</li>
+                            <li>Guest passes (2 per month)</li>
+                            <li>Online workout library</li>
+                        </ul>
+                        <button class="plan-button">Choose Basic</button>
+                    </div>
+
+                    <!-- Premium Plan (Featured) -->
+                    <div class="plan featured">
+                        <h3>Premium</h3>
+                        <div class="price">$59<span>/month</span></div>
+                        <ul>
+                            <li>24/7 gym access</li>
+                            <li>All group fitness classes</li>
+                            <li>Personal training session (1/month)</li>
+                            <li>Nutrition consultation</li>
+                            <li>Guest passes (5 per month)</li>
+                            <li>Pool and spa access</li>
+                            <li>Towel service</li>
+                            <li>Priority class booking</li>
+                        </ul>
+                        <button class="plan-button">Choose Premium</button>
+                    </div>
+
+                    <!-- Elite Plan -->
+                    <div class="plan">
+                        <h3>Elite</h3>
+                        <div class="price">$99<span>/month</span></div>
+                        <ul>
+                            <li>All Premium benefits</li>
+                            <li>Unlimited personal training</li>
+                            <li>Customized meal plans</li>
+                            <li>Body composition analysis</li>
+                            <li>Unlimited guest passes</li>
+                            <li>Massage therapy (2/month)</li>
+                            <li>VIP locker room access</li>
+                            <li>Complimentary supplements</li>
+                        </ul>
+                        <button class="plan-button">Choose Elite</button>
+                    </div>
+                </div>
+
+                <!-- Special Offers -->
+                <div style="text-align: center; margin-top: 3rem; padding: 2rem; background: #f8f9fa; border-radius: 15px;">
+                    <h3 style="color: #e74c3c; margin-bottom: 1rem;">🎉 Special Offers</h3>
+                    <p style="font-size: 1.1rem; margin-bottom: 1rem;">
+                        <strong>New Member Special:</strong> Get your first month FREE with any annual membership!
+                    </p>
+                    <p style="font-size: 1.1rem; margin-bottom: 1rem;">
+                        <strong>Student Discount:</strong> 20% off any membership with valid student ID.
+                    </p>
+                    <p style="font-size: 1.1rem;">
+                        <strong>Corporate Rates:</strong> Special group rates available for companies with 10+ employees.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section" style="background: white;">
+            <div class="container">
+                <h2 class="section-title">Additional Services</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>💪 Personal Training</h3>
+                        <p><strong>$75/session</strong><br>
+                        One-on-one training with certified personal trainers. Customized workouts, form correction, and motivation to reach your goals faster.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🍎 Nutrition Coaching</h3>
+                        <p><strong>$50/session</strong><br>
+                        Work with registered dietitians to create sustainable meal plans, learn healthy eating habits, and optimize your nutrition for performance.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🧘‍♀️ Small Group Training</h3>
+                        <p><strong>$35/session</strong><br>
+                        Semi-private training sessions with 2-4 people. Get personalized attention while enjoying the motivation of training with friends.</p>
+                    </div>
+                    <div class="card">
+                        <h3>💆‍♂️ Massage Therapy</h3>
+                        <p><strong>$80/hour</strong><br>
+                        Professional massage therapy for recovery, injury prevention, and relaxation. Sports massage and deep tissue options available.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🏊‍♀️ Swimming Lessons</h3>
+                        <p><strong>$60/session</strong><br>
+                        Learn to swim or improve your technique with certified swim instructors. Available for all ages and skill levels.</p>
+                    </div>
+                    <div class="card">
+                        <h3>📊 Body Composition Analysis</h3>
+                        <p><strong>$25/scan</strong><br>
+                        Advanced DEXA scan technology to track muscle mass, body fat percentage, and bone density for comprehensive health monitoring.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Class Schedule Section -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Group Fitness Classes</h2>
+                <p style="text-align: center; font-size: 1.1rem; margin-bottom: 3rem; color: #666;">
+                    Join our energetic group fitness classes led by certified instructors. All classes are included with Premium and Elite memberships.
+                </p>
+                <div class="cards-grid">
+                    <div class="card">
+                        <h3>🔥 HIIT Training</h3>
+                        <p><strong>Mon, Wed, Fri - 6:00 AM & 6:00 PM</strong><br>
+                        High-intensity interval training for maximum calorie burn and cardiovascular fitness improvement.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🚴‍♀️ Spin Classes</h3>
+                        <p><strong>Tue, Thu, Sat - 7:00 AM & 5:30 PM</strong><br>
+                        High-energy cycling workouts with motivating music and challenging terrain simulations.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🧘‍♀️ Yoga Flow</h3>
+                        <p><strong>Daily - 8:00 AM & 7:00 PM</strong><br>
+                        Vinyasa and Hatha yoga classes for flexibility, strength, and mindfulness. All levels welcome.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🤸‍♀️ Pilates</h3>
+                        <p><strong>Mon, Wed, Fri - 12:00 PM</strong><br>
+                        Core-focused workouts to improve posture, flexibility, and overall body strength.</p>
+                    </div>
+                    <div class="card">
+                        <h3>💃 Zumba</h3>
+                        <p><strong>Tue, Thu - 6:30 PM</strong><br>
+                        Fun, dance-based fitness classes that combine Latin rhythms with easy-to-follow moves.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🥊 Kickboxing</h3>
+                        <p><strong>Sat, Sun - 10:00 AM</strong><br>
+                        High-energy martial arts-inspired workouts for cardio, strength, and stress relief.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Membership Benefits Section -->
+        <section class="section" style="background: linear-gradient(135deg, #2c3e50, #34495e); color: white;">
+            <div class="container">
+                <h2 style="color: white; text-align: center; margin-bottom: 3rem;">All Memberships Include</h2>
+                <div class="cards-grid">
+                    <div class="card" style="background: rgba(255,255,255,0.1); color: white; border-top: 4px solid #e74c3c;">
+                        <h3 style="color: #e74c3c;">🏃‍♂️ Cardio & Strength Equipment</h3>
+                        <p>Access to all cardio machines, free weights, and strength training equipment during your membership hours.</p>
+                    </div>
+                    <div class="card" style="background: rgba(255,255,255,0.1); color: white; border-top: 4px solid #27ae60;">
+                        <h3 style="color: #27ae60;">🚿 Locker Room Facilities</h3>
+                        <p>Clean, spacious locker rooms with showers, changing areas, and complimentary toiletries.</p>
+                    </div>
+                    <div class="card" style="background: rgba(255,255,255,0.1); color: white; border-top: 4px solid #f39c12;">
+                        <h3 style="color: #f39c12;">📱 FitZone Mobile App</h3>
+                        <p>Track workouts, book classes, monitor progress, and connect with the FitZone community.</p>
+                    </div>
+                    <div class="card" style="background: rgba(255,255,255,0.1); color: white; border-top: 4px solid #9b59b6;">
+                        <h3 style="color: #9b59b6;">🎯 Fitness Assessments</h3>
+                        <p>Regular fitness evaluations and progress tracking to help you stay on track with your goals.</p>
+                    </div>
+                    <div class="card" style="background: rgba(255,255,255,0.1); color: white; border-top: 4px solid #3498db;">
+                        <h3 style="color: #3498db;">🏆 Member Challenges</h3>
+                        <p>Participate in monthly fitness challenges and competitions with prizes and recognition.</p>
+                    </div>
+                    <div class="card" style="background: rgba(255,255,255,0.1); color: white; border-top: 4px solid #e67e22;">
+                        <h3 style="color: #e67e22;">🤝 Community Support</h3>
+                        <p>Join a supportive community of fitness enthusiasts and make lasting friendships.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="section" style="background: white; text-align: center;">
+            <div class="container">
+                <h2 style="color: #2c3e50; margin-bottom: 1rem;">Ready to Join FitZone?</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem; color: #666; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Start your fitness journey today! Visit us for a free tour and trial workout, or contact our membership team for more information.
+                </p>
+                <div style="margin-bottom: 2rem;">
+                    <a href="#" class="cta-button" style="margin-right: 1rem;">Schedule a Tour</a>
+                    <a href="#" class="cta-button" style="background: transparent; border: 2px solid #e74c3c; color: #e74c3c;">Contact Us</a>
+                </div>
+                <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; max-width: 500px; margin: 0 auto;">
+                    <h3 style="color: #2c3e50; margin-bottom: 1rem;">📍 Visit Our Location</h3>
+                    <p style="margin-bottom: 0.5rem;"><strong>Address:</strong> 123 Fitness Street, Wellness City, WC 12345</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>Phone:</strong> (555) 123-4567</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>Email:</strong> info@fitzonegym.com</p>
+                    <p><strong>Hours:</strong> Mon-Sun 5:00 AM - 11:00 PM</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('about') }}">About</a>
+                <a href="{{ url_for('membership') }}">Membership</a>
+            </div>
+            <p>&copy; 2026 FitZone Gym. All rights reserved. Transform your body, transform your life.</p>
+        </div>
+    </footer>
+</body>
+</html>
